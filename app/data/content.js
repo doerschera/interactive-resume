@@ -1,6 +1,6 @@
 
 export default {
-  skills: ['HTML/CSS', 'SASS', 'Javascript', 'jQuery', 'Node', 'React', 'Express', 'Handlebars', 'Photoshop', 'Illustrator', 'InDesign'],
+  skills: [{name: 'HTML/CSS'}, {name: 'SASS'}, {name: 'Javascript'}, {name: 'jQuery'}, {name: 'Node'}, {name: 'React'}, {name: 'Express'}, {name: 'Handlebars'}, {name: 'Photoshop'}, {name: 'Illustrator'}, {name: 'InDesign'}],
   education: [
     {
       title: 'Undergraduate Degree',
@@ -24,4 +24,4 @@ export default {
       honors: false
     }
   ]
-}
+};
