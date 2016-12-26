@@ -1,5 +1,67 @@
 @import "helpers/variables.scss";
 
+// element styles
+
 body {
   font-family: $font-main;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 20px;
+  display: inline-block;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+.col-12 {
+  width: 100%;
+  display: inline-block;
+}
+
+.col-8 {
+  width: 66.66%;
+  display: inline-block;
+}
+
+.col-4 {
+  width: 33.33%;
+  display: inline-block;
+}
+
+
+// index styles
+ .main {
+   width: 800px;
+   margin: auto;
+ }
+
+ #about {
+   background-color: $light-teal;
+   text-align: center;
+ }
+
+ #name {
+   h1 {
+     font-size: 60px;
+     color: $dark-blue;
+     margin-bottom: 0;
+     padding-bottom: 0;
+   }
+   h2 {
+     font-size: 36px;
+     color: $dark-teal;
+     margin-top: 0;
+     padding-top: 0;
+   }
+   img {
+     width: 50px;
+   }
+ }
