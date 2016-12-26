@@ -2,32 +2,39 @@
 <div class="main">
   <div class="col-12" id="about">
     {{#link-to "about"}}
-    <h2>About</h2>
+    <h1>About</h1>
     {{/link-to}}
   </div>
-  <div class="col-8" id="name">
-    <h1>Aly Doerscher</h1>
-    <h2>Frontend Developer</h2>
-    <ul class="contact-list">
-      <li class="contact-icon">
-        <a href="#"><img src="assets/images/mail-icon.png" alt="" /></a>
-      </li>
-      <li class="contact-icon">
-        <a href="#">
-        <img src="assets/images/git-icon.png" alt=""></a>
-      </li>
-      <li class="contact-icon">
-        <a href="#"><img src="assets/images/li-icon.png" alt=""></a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-4" id="skills">
-    <h5>skills</h5>
-    <ul class="skills-list">
-      {{#each skills as |skill|}}
-        <li>{{skill.name}}</li>
-      {{/each}}
-    </ul>
+  <div class="row">
+    <div class="col-8" id="name">
+      <h1>Aly Doerscher</h1>
+      <h2>Frontend Developer</h2>
+      <ul class="contact-list">
+        <li class="contact-icon">
+          <a href="#"><img src="assets/images/mail-icon.png" alt="" /></a>
+        </li>
+        <li class="contact-icon">
+          <a href="#">
+          <img src="assets/images/git-icon.png" alt=""></a>
+        </li>
+        <li class="contact-icon">
+          <a href="#"><img src="assets/images/li-icon.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-4" id="skills">
+      <p class="col-12 small-title">skills</p>
+      <ul class="skills-list">
+        {{#each skills as |skill|}}
+          <li>{{skill.name}}</li>
+        {{/each}}
+      </ul>
+
+      <div {{action "slideDisplay" on="click"}} class="skills-screen">
+        <h1>Skills</h1>
+      </div>
+
+    </div>
   </div>
   <div class="col-12" id="education">
     {{#each education as |entry|}}
