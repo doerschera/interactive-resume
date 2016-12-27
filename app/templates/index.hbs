@@ -30,18 +30,11 @@
       <h1>I'm Aly</h1>
       <h2>Frontend Developer</h2>
     </div>
-    <div class="col-6" id="skills">
-      <p class="col-12 small-title">skills</p>
-      <ul class="skills-list">
-        {{#each skills as |skill|}}
-          <li>{{skill.name}}</li>
-        {{/each}}
-      </ul>
-
-      <div {{action "slideSkills" on="click"}} class="skills-cover">
-        <h2>Here's what I can do</h2>
-      </div>
-
+    <div class="col-6" id="projects">
+      <p class="small-title">Work</p>
+      {{#link-to "projects"}}
+      <h3>Here's what I can do</h3>
+      {{/link-to}}
     </div>
   </div>
   <div class="col-12" id="education">
@@ -57,18 +50,30 @@
     </div>
     {{/each}}
     <div {{action "slideEdu"}} class="education-cover">
+      <p class="small-title">Education</p>
       <h2>My background in art and design gave me a strong visual sensibility and a love of problem solving. When I started programming I found the perfect medium. </h2>
     </div>
   </div>
-  <div class="col-8" id="projects">
-    {{#link-to "projects"}}
-    <h3>projects</h3>
-    {{/link-to}}
-  </div>
-  <div class="col-4" id="experience">
-    {{#link-to "experience"}}
-    <h3>experience</h3>
-    {{/link-to}}
+  <div class="row">
+    <div class="col-6" id="skills">
+      <p class="col-12 small-title">Skills</p>
+      <ul class="skills-list">
+        {{#each skills as |skill|}}
+          <li>{{skill.name}}</li>
+        {{/each}}
+      </ul>
+      <div {{action "slideSkills" on="click"}} class="skills-cover">
+        <p class="col-12 small-title">Skills</p>
+        <h2>I have experience with modern frameworks such as Reach and Ember as well as strong fundamentals in Jacascript, HTML, & CSS </h2>
+      </div>
+    </div>
+
+    <div class="col-6" id="experience">
+      <p class="small-title">Experience</p>
+      {{#link-to "experience"}}
+      <h3>Here's what I've done</h3>
+      {{/link-to}}
+    </div>
   </div>
 
 </div>
