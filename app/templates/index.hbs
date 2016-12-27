@@ -38,7 +38,7 @@
         {{/each}}
       </ul>
 
-      <div {{action "slideDisplay" on="click"}} class="skills-cover">
+      <div {{action "slideSkills" on="click"}} class="skills-cover">
         <h2>Here's what I can do</h2>
       </div>
 
@@ -56,6 +56,9 @@
       {{/if}}
     </div>
     {{/each}}
+    <div {{action "slideEdu"}} class="education-cover">
+      <h2>My background in art and design gave me a strong visual sensibility and a love of problem solving. When I started programming I found the perfect medium. </h2>
+    </div>
   </div>
   <div class="col-8" id="projects">
     {{#link-to "projects"}}
@@ -67,6 +70,7 @@
     <h3>experience</h3>
     {{/link-to}}
   </div>
+
 </div>
 
 <!-- {{outlet}} -->

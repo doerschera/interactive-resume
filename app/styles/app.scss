@@ -167,3 +167,57 @@ li {
      cursor: pointer;
    }
  }
+
+ #education {
+   text-align: center;
+   padding: 10px;
+   padding-bottom: 15px;
+   position: relative;
+ }
+
+ .education-list-item {
+   display: inline-block;
+   width: 30%;
+   color: $medium-teal;
+   .small-title {
+     margin-bottom: 20px;
+     text-align: left;
+   }
+   h4 {
+     display: block;
+     width: 100%;
+     font-size: 14px;
+     margin: 0;
+     text-align: left;
+   }
+   &:nth-child(3) {
+     float: right;
+   }
+   &:nth-child(2) {
+     clear: both;
+   }
+   &:nth-child(1) {
+     float: left;
+   }
+ }
+
+ .education-cover {
+   text-align: left;
+   background-color: white;
+   color: $medium-teal;
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 14px;
+   height: 100%;
+   h2 {
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     margin: 0;
+   }
+   &:hover {
+     cursor: pointer;
+   }
+ }
