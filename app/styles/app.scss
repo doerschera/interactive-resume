@@ -7,7 +7,6 @@ body {
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
 
@@ -40,6 +39,12 @@ li {
   flex-direction: column;
 }
 
+.col-6 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .col-4 {
   width: 33.33%;
   display: flex;
@@ -51,40 +56,67 @@ li {
   margin-bottom: 0;
 }
 
+.med-paragraph {
+  font-size: 16px;
+}
+
 
 // index styles
+
+#row1, #education, {
+  border-bottom: solid 1px $light-teal;
+}
+
+#row1 {
+  border-top: solid 1px $light-teal;
+  margin-top: 5px;
+}
+
+#connect {
+  border-right: solid 1px $light-teal;
+  display: block;
+  p {
+    color: $light-blue;
+    margin-bottom: 20px;
+  }
+}
+
  .main {
    width: 800px;
    margin: auto;
  }
 
+ .contact-list {
+   margin: 0;
+   li:nth-child(2) {
+     margin: 0 20px;
+   }
+   img {
+     width: 30px;
+     opacity: 0.7;
+   }
+ }
+
  #about {
-   background-color: $light-teal;
-   text-align: center;
+   padding: 0 20px;
+   p {
+     color: $light-teal;
+   }
  }
 
  #name {
    h1 {
-     font-size: 60px;
+     font-size: 96px;
      color: $dark-blue;
-     margin-bottom: -10px;
+     margin: 0px;
      padding-bottom: 0;
    }
    h2 {
      font-size: 40px;
      color: $dark-teal;
-     margin-top: 0;
+     margin-top: -20px;
      margin-bottom: 5px;
      padding-top: 0;
-   }
-   img {
-     width: 30px;
-   }
-   ul {
-     margin: 0;
-     li:nth-child(2) {
-       margin: 0 20px;
-     }
    }
  }
 
@@ -93,16 +125,19 @@ li {
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
-   border-left: solid 1px $light-blue;
+   border-left: solid 1px $light-teal;
    color: $light-blue;
    margin: 5px 0;
-   padding: 0 40px;
+   p {
+     margin-left: 40px;
+   }
    .skills-list {
-     -moz-column-count: 2;
-    -moz-column-gap: 30px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 30px;
-     column-count: 2;
+     margin-left: 40px;
+     -moz-column-count: 3;
+    -moz-column-gap: 50px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 50px;
+     column-count: 3;
      column-gap: 50px;
      li {
        display: list-item;
@@ -110,15 +145,18 @@ li {
    }
  }
 
- .skills-screen {
+ .skills-cover {
    position: absolute;
    top: 0;
    left: 0;
    height: 100%;
    width: 100%;
-   background-color: $light-blue;
-   color: white;
-   h1 {
+   background-color: white;
+   color: $light-blue;
+   h2 {
+     text-align: center;
+     font-size: 30px;
+     width: inherit;
      margin: 0;
      position: absolute;
      top: 50%;

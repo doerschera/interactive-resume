@@ -6,7 +6,10 @@ export default Ember.Controller.extend({
   education: data.education,
   actions: {
     slideDisplay() {
-      $('.skills-screen').animate({width: 0});
+      $('.skills-cover h2').css({color: 'white'});
+      $('.skills-cover').animate({width: 0}, function() {
+        $('.skills-cover h2').hide();
+      });
     }
   }
 });

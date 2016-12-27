@@ -1,6 +1,6 @@
 
 export default {
-  skills: [{name: 'HTML/CSS'}, {name: 'SASS'}, {name: 'Javascript'}, {name: 'jQuery'}, {name: 'Node'}, {name: 'React'}, {name: 'Express'}, {name: 'Handlebars'}, {name: 'Photoshop'}, {name: 'Illustrator'}, {name: 'InDesign'}],
+  skills: [{name: 'HTML/CSS'}, {name: 'SASS'}, {name: 'Javascript'}, {name: 'jQuery'}, {name: 'Git'}, {name: 'APIs'}, {name: 'Node'}, {name: 'React'}, {name: 'Express'}, {name: 'Handlebars'}, {name: 'MongoDB'}, {name: 'MySQL'}, {name: 'Photoshop'}, {name: 'Illustrator'}, {name: 'InDesign'}],
   education: [
     {
       title: 'Undergraduate Degree',

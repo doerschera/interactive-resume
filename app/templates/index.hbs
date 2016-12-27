@@ -1,14 +1,8 @@
 
 <div class="main">
-  <div class="col-12" id="about">
-    {{#link-to "about"}}
-    <h1>About</h1>
-    {{/link-to}}
-  </div>
   <div class="row">
-    <div class="col-8" id="name">
-      <h1>Aly Doerscher</h1>
-      <h2>Frontend Developer</h2>
+    <div class="col-4" id="connect">
+      <p class="small-title">Connect</p>
       <ul class="contact-list">
         <li class="contact-icon">
           <a href="#"><img src="assets/images/mail-icon.png" alt="" /></a>
@@ -22,7 +16,21 @@
         </li>
       </ul>
     </div>
-    <div class="col-4" id="skills">
+    <div class="col-6" id="about">
+      {{#link-to "about"}}
+      <p class="small-title">About</p>
+      <p class="med-paragraph">
+        Hi! Nice to meet you. I’m a cat-loving developer with a passion for beautiful sites as well as beautiful chairs . . .
+      </p>
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="row" id="row1">
+    <div class="col-6" id="name">
+      <h1>I'm Aly</h1>
+      <h2>Frontend Developer</h2>
+    </div>
+    <div class="col-6" id="skills">
       <p class="col-12 small-title">skills</p>
       <ul class="skills-list">
         {{#each skills as |skill|}}
@@ -30,8 +38,8 @@
         {{/each}}
       </ul>
 
-      <div {{action "slideDisplay" on="click"}} class="skills-screen">
-        <h1>Skills</h1>
+      <div {{action "slideDisplay" on="click"}} class="skills-cover">
+        <h2>Here's what I can do</h2>
       </div>
 
     </div>
