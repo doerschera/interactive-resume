@@ -1,28 +1,43 @@
 
 <div class="main">
-  <div class="12-col" id="about">
-    {{#link-to "about"}}
-    <h3>about</h3>
-    {{/link-to}}
+  <div class="row">
+    <div class="col-4" id="connect">
+      <p class="small-title">Connect</p>
+      <ul class="contact-list">
+        <li class="contact-icon">
+          <a href="mailto:doerschera@gmail.com?Subject=Hello"><img src="assets/images/mail-icon.png" alt="" /></a>
+        </li>
+        <li class="contact-icon">
+          <a href="https://github.com/doerschera" target="_blank">
+          <img src="assets/images/git-icon.png" alt=""></a>
+        </li>
+        <li class="contact-icon">
+          <a href="https://www.linkedin.com/in/aly-doerscher-90a24510b" target="_blank"><img src="assets/images/li-icon.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6" id="about">
+      {{#link-to "about"}}
+      <p class="small-title">About</p>
+      <p class="med-paragraph">
+        Hi! Nice to meet you. I’m a cat-loving developer with a passion for beautiful sites as well as beautiful chairs . . .
+      </p>
+      {{/link-to}}
+    </div>
   </div>
-  <div class="8-col" id="name">
-    <h3>Aly Doerscher</h3>
-    <h5>Frontend Developer</h5>
-    <ul class="contact-list">
-      <li class="contact-icon"><a href="#">email</a></li>
-      <li class="contact-icon"><a href="#">github</a></li>
-      <li class="contact-icon"><a href="#">linkedin</a></li>
-    </ul>
+  <div class="row" id="row1">
+    <div class="col-6" id="name">
+      <h1>I'm Aly</h1>
+      <h2>Frontend Developer</h2>
+    </div>
+    <div class="col-6" id="projects">
+      <p class="small-title">Work</p>
+      {{#link-to "projects"}}
+      <h3>Here's what I can do</h3>
+      {{/link-to}}
+    </div>
   </div>
-  <div class="4-col" id="skills">
-    <h5>skills</h5>
-    <ul class="skills-list">
-      {{#each skills as |skill|}}
-        <li>{{skill.name}}</li>
-      {{/each}}
-    </ul>
-  </div>
-  <div class="12-col" id="education">
+  <div class="col-12" id="education">
     {{#each education as |entry|}}
     <div class="education-list-item">
       <p class="small-title">{{entry.title}}</p>
@@ -34,17 +49,33 @@
       {{/if}}
     </div>
     {{/each}}
+    <div {{action "slideEdu"}} class="education-cover">
+      <p class="small-title">Education</p>
+      <h2>My background in art and design gave me a strong visual sensibility and a love of problem solving. When I started programming I found the perfect medium. </h2>
+    </div>
   </div>
-  <div class="8-col" id="projects">
-    {{#link-to "projects"}}
-    <h3>projects</h3>
-    {{/link-to}}
+  <div class="row">
+    <div class="col-6" id="skills">
+      <p class="col-12 small-title">Skills</p>
+      <ul class="skills-list">
+        {{#each skills as |skill|}}
+          <li>{{skill.name}}</li>
+        {{/each}}
+      </ul>
+      <div {{action "slideSkills" on="click"}} class="skills-cover">
+        <p class="col-12 small-title">Skills</p>
+        <h2>I have experience with modern frameworks such as Reach and Ember as well as strong fundamentals in Jacascript, HTML, & CSS </h2>
+      </div>
+    </div>
+
+    <div class="col-6" id="experience">
+      <p class="small-title">Experience</p>
+      {{#link-to "experience"}}
+      <h3>Here's what I've done</h3>
+      {{/link-to}}
+    </div>
   </div>
-  <div class="4-col" id="experience">
-    {{#link-to "experience"}}
-    <h3>experience</h3>
-    {{/link-to}}
-  </div>
+
 </div>
 
 <!-- {{outlet}} -->
