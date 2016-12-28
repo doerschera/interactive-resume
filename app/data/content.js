@@ -37,7 +37,7 @@ export default {
       id: 2,
       title: 'Word.ly',
       skills: 'Express &#x25cf; Handlebars &#x25cf; MySQL &#x25cf; Node',
-      image: 'assets/images/Wordly3.png',
+      image: 'assets/images/Wordly4.png',
       links: ['https://github.com/doerschera/wordly', 'https://word-ly.herokuapp.com/'],
       description: "Word.ly is a curated word list for writers. The words can serve as inspiration point or as resource for expanding vocabulary. Users can view and add words, as well as save favorite words via local storage. A MySQL database provides persistent storage and a custom ORM is used to make queries."
     },
