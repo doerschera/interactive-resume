@@ -1,1 +1,31 @@
-{{outlet}}
+
+{{#nav-bar}}
+{{/nav-bar}}
+
+<div class="work-page">
+  <div class="row">
+    <div class="col-4 title">
+      <h1>Work</h1>
+    </div>
+    <div class="col-8 work-intro">
+      <p>I make sites that are both fun and functional. Recent projects include tools for writers, a RISD web tour, and a math game for young girls.</p>
+    </div>
+  </div>
+  {{#each projects as |project|}}
+  <div class="row">
+    <div class="col-4">
+      <a href="{{project.links.[1]}}">
+        <img src="{{project.image}}" alt="{{project.title}}">
+      </a>
+    </div>
+    <div class="col-8">
+      <a href="{{projects.links.[1]}}">
+        <h2>{{project.title}}</h2>
+      </a>
+      <h5>{{{project.skills}}}</h5>
+      <p>{{project.description}}</p>
+      <a href="{{project.links.[0]}}">View code</a>
+    </div>
+  </div>
+  {{/each}}
+</div>

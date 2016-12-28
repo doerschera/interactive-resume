@@ -54,5 +54,10 @@ export default Ember.Controller.extend({
         this.set('definition', response.results[0].definition);
       }
     }.bind(this));
-  }
+  },
+
+  // didRender() {
+  //   console.log('render');
+  //   $('.color').css({backgroundColor: this.hex});
+  // }
 });
