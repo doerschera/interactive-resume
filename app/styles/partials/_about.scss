@@ -1,6 +1,6 @@
 .about-page {
   width: 800px;
-  margin: 70px auto;
+  margin: 80px auto;
 }
 
 .bio {
@@ -45,7 +45,7 @@
 }
 
 .word-info {
-  color: $light-blue;
+  color: $dark-blue;
   .word, .definition {
     text-transform: capitalize;
     margin: 0;
@@ -60,7 +60,7 @@
 }
 
 .color-info {
-  color: $dark-blue;
+  color: $dark-teal;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -88,4 +88,8 @@
 .color-values li {
   display: list-item;
   list-style: none;
+}
+
+.about-connect {
+
 }
