@@ -1,0 +1,47 @@
+.about-page {
+  width: 800px;
+  margin: 70px auto;
+}
+
+.bio {
+  border-bottom: solid 1px $light-teal;
+  margin-bottom: 5px;
+}
+
+.greeting, .word-info {
+  border-right: solid 1px $light-teal;
+}
+
+.greeting {
+  box-sizing: border-box;
+  margin: 5px 0;
+  h1 {
+    font-size: 100px;
+    line-height: 100%;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: $dark-teal;
+  }
+}
+
+.bio-text {
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  color: $medium-teal;
+}
+
+
+.word-info {
+  color: $light-blue;
+  .word, .definition {
+    text-transform: capitalize;
+    margin: 0;
+  }
+  .word {
+    margin-top: 16px;
+  }
+  .part {
+    margin-top: 0;
+  }
+}
