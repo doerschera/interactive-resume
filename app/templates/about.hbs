@@ -1,1 +1,31 @@
-{{outlet}}
+{{#nav-bar}}
+{{/nav-bar}}
+<div class="about-page">
+  <div class="bio">
+    <h1>Hello again</h1>
+    <p>
+      My name is Aly Doerscher, I'm a frontend developer currently based in Austin, TX. I have a background in art and design and earned a BFA from the Rhode Island School of Design before diving into web development. Along the way I discovered that problem solving is what really excites me. I love mixing logic with aesthetics to create elegant and dynamic sites.
+      <br><br>
+      In my freetime I like to relax with podcasts and knitting, espeically when accompanied by a purring cat and beautifully designed chair. On top of being a design nerd, I grew up writing and have managed to publish a few poems of my own. Please enjoy some words and color on the house.
+    </p>
+  </div>
+  <div class="inspiration">
+    <div class="row">
+      <p class="small-title">Inspiration</p>
+      <div class="word-info col-6">
+        <h3 class="word">{{word}}</h3>
+        <p class="part">{{part}}</p>
+        <h5 class="definition">{{definition}}</h5>
+      </div>
+      <div class="color-info col-6">
+        <div class="color"></div>
+        <p class="color-name">{{name}}</p>
+        <ul class="color-values">
+          <li>{{hex}}</li>
+          <li>{{rgb}}</li>
+          <li>{{cmyk}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

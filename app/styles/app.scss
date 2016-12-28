@@ -11,10 +11,6 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  display: inline-block;
-}
-
 ul {
   padding: 0;
 }
@@ -159,7 +155,6 @@ li {
      text-align: left;
    }
    h4 {
-     display: block;
      width: 100%;
      font-size: 14px;
      margin: 0;
@@ -225,7 +220,6 @@ li {
    background-color: white;
    color: $light-blue;
    h2 {
-     display: block;
      font-size: 16px;
      width: inherit;
      margin: 0;
