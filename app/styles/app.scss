@@ -4,6 +4,7 @@
 @import "partials/about.scss";
 @import "partials/nav.scss";
 @import "partials/connect.scss";
+@import "partials/work.scss";
 
 // element styles
 
@@ -22,6 +23,11 @@ ul {
 li {
   display: inline;
   list-style: none;
+}
+
+.container {
+  width: 800px;
+  margin: 80px auto;
 }
 
 .row {
