@@ -67,11 +67,11 @@ export default {
     },
     {
       id: 6,
-      title: 'Objectified',
-      skills: 'Express &#x25cf; jQuery &#x25cf; Charts.js &#x25cf; SASS',
-      image: 'assets/images/Objectified4.png',
-      links: ['https://github.com/doerschera/objectified', 'https://object-ified.herokuapp.com/'],
-      description: "Objectified is a short quiz that matches your current mood to an inanimate object. This app is a riff on traditional dating sites, created by correlating aspects of human emotion to characteristics of objects. To calculate the result, the difference between each of the user's ratings are compared to the overall difference between each object's rating."
+      title: '512 Bingo',
+      skills: 'Express &#x25cf; Handlebars &#x25cf; MySQL &#x25cf; Sequelize &#x25cf; Google Maps Geolocation',
+      image: 'assets/images/Bingo1.png',
+      links: ['https://github.com/JessicaSung/512-Bingo', 'https://bingo-512.herokuapp.com/'],
+      description: "512-Bingo is an interactive game designed to help tourists and locals alike connect with the unique features of Austin. Users choose a game board based on themes such as coffee shops or swimming holes and mark items as they are discovered. Created with Jessica Sung, Erin Gianette, and Blake Roddy."
     }
   ]
 };
