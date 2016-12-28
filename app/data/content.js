@@ -37,7 +37,7 @@ export default {
       id: 2,
       title: 'Word.ly',
       skills: 'Express &#x25cf; Handlebars &#x25cf; MySQL &#x25cf; Node',
-      image: 'assets/images/Wordly4.png',
+      image: 'assets/images/Wordly2.png',
       links: ['https://github.com/doerschera/wordly', 'https://word-ly.herokuapp.com/'],
       description: "Word.ly is a curated word list for writers. The words can serve as inspiration point or as resource for expanding vocabulary. Users can view and add words, as well as save favorite words via local storage. A MySQL database provides persistent storage and a custom ORM is used to make queries."
     },
@@ -69,7 +69,7 @@ export default {
       id: 6,
       title: '512 Bingo',
       skills: 'Express &#x25cf; Handlebars &#x25cf; MySQL &#x25cf; Sequelize &#x25cf; Google Maps Geolocation',
-      image: 'assets/images/Bingo1.png',
+      image: 'assets/images/Bingo3.png',
       links: ['https://github.com/JessicaSung/512-Bingo', 'https://bingo-512.herokuapp.com/'],
       description: "512-Bingo is an interactive game designed to help tourists and locals alike connect with the unique features of Austin. Users choose a game board based on themes such as coffee shops or swimming holes and mark items as they are discovered. Created with Jessica Sung, Erin Gianette, and Blake Roddy."
     }
