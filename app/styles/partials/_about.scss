@@ -15,12 +15,12 @@
 .greeting {
   box-sizing: border-box;
   margin: 5px 0;
+  color: $dark-teal;
   h1 {
     font-size: 100px;
     line-height: 100%;
     margin-top: 16px;
     margin-bottom: 0;
-    color: $dark-teal;
   }
 }
 
@@ -31,6 +31,18 @@
   color: $medium-teal;
 }
 
+.inspiration .small-title {
+  color: $light-teal;
+}
+
+.inspiration {
+  border-bottom: solid 1px $light-teal;
+}
+
+.word-info, .color-info {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
 
 .word-info {
   color: $light-blue;
@@ -39,9 +51,41 @@
     margin: 0;
   }
   .word {
+    font-size: 50px;
     margin-top: 16px;
   }
   .part {
     margin-top: 0;
   }
+}
+
+.color-info {
+  color: $dark-blue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .small-title, .row {
+    margin-left: 20px;
+  }
+  .row {
+    margin-top: 16px;
+  }
+}
+
+.color {
+  height: 120px;
+  width: 120px;
+}
+
+.color-values-wrapper {
+  margin-left: 60px;
+}
+
+.color-name {
+  margin-top: 0;
+}
+
+.color-values li {
+  display: list-item;
+  list-style: none;
 }

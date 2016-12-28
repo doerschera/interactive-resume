@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
   word: '',
   part: false,
   definition: false,
-  color: '',
+  name: '',
   hex: '',
   rgb: '',
   cmyk: '',
@@ -33,10 +33,12 @@ export default Ember.Controller.extend({
       method: 'GET'
     }).done(function(response) {
       console.log(response);
-      this.set('color', response.name.value);
+      this.set('name', response.name.value);
       this.set('hex', response.hex.value);
       this.set('rgb', response.rgb.value);
       this.set('cmyk', response.cmyk.value);
+
+      $('.color').css({backgroundColor: response.hex.value});
     }.bind(this));
 
     // retrieve random word
