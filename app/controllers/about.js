@@ -4,6 +4,14 @@ import ENV from 'resume/config/environment';
 let $ = Ember.$;
 
 export default Ember.Controller.extend({
+  word: '',
+  part: '',
+  definition: '',
+  color: '',
+  hex: '',
+  rgb: '',
+  cmyk: '',
+
   init() {
     let colorQuery = randomColor();
 
@@ -25,7 +33,11 @@ export default Ember.Controller.extend({
       method: 'GET'
     }).done(function(response) {
       console.log(response);
-    });
+      this.set('color', response.name.value);
+      this.set('hex', response.hex.value);
+      this.set('rgb', response.rgb.value);
+      this.set('cmyk', response.cmyk.value);
+    }.bind(this));
 
     $.ajax({
       url: 'https://wordsapiv1.p.mashape.com/words/?random=true',
@@ -33,6 +45,11 @@ export default Ember.Controller.extend({
       beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', ENV.WORD_KEY)},
     }).done(function(response) {
       console.log(response);
-    })
+      this.set('word', response.word);
+      if(response.results) {
+        this.set('part', response.results[0].partOfSpeech);
+        this.set('definition', response.results[0].definition);
+      }
+    }.bind(this));
   }
 });
