@@ -1,0 +1,15 @@
+
+.nav-bar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  a {
+    color: $light-teal;
+    border-right: solid 1px $light-teal;
+    padding: 0 10px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

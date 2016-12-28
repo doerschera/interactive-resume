@@ -5,9 +5,9 @@ let $ = Ember.$;
 
 export default Ember.Controller.extend({
   word: '',
-  part: '',
-  definition: '',
-  color: '',
+  part: false,
+  definition: false,
+  name: '',
   hex: '',
   rgb: '',
   cmyk: '',
@@ -27,20 +27,23 @@ export default Ember.Controller.extend({
       return color;
     }
 
-
+    // retrieve color data using random color
     $.ajax({
       url: 'http://www.thecolorapi.com/id?format=json&hex='+colorQuery,
       method: 'GET'
     }).done(function(response) {
       console.log(response);
-      this.set('color', response.name.value);
+      this.set('name', response.name.value);
       this.set('hex', response.hex.value);
       this.set('rgb', response.rgb.value);
       this.set('cmyk', response.cmyk.value);
+
+      $('.color').css({backgroundColor: response.hex.value});
     }.bind(this));
 
+    // retrieve random word
     $.ajax({
-      url: 'https://wordsapiv1.p.mashape.com/words/?random=true',
+      url: 'https://wordsapiv1.p.mashape.com/words/?random=true&hasDetails',
       method: 'GET',
       beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', ENV.WORD_KEY)},
     }).done(function(response) {

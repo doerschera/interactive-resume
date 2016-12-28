@@ -1,5 +1,9 @@
 @import "helpers/variables.scss";
 @import "helpers/mixins.scss";
+@import "partials/index.scss";
+@import "partials/about.scss";
+@import "partials/nav.scss";
+@import "partials/connect.scss";
 
 // element styles
 
@@ -45,7 +49,7 @@ li {
 .col-4 {
   width: 33.33%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .small-title {
@@ -56,191 +60,3 @@ li {
 .med-paragraph {
   font-size: 16px;
 }
-
-
-// index styles
-
-.main {
-  width: 800px;
-  margin: 50px auto;
-}
-
-#row1, #education, {
-  border-bottom: solid 1px $light-teal;
-}
-
-#row1 {
-  border-top: solid 1px $light-teal;
-  margin-top: 5px;
-}
-
-#connect {
-  border-right: solid 1px $light-teal;
-  display: block;
-  p {
-    color: $light-blue;
-    margin-bottom: 20px;
-  }
-}
-
- .contact-list {
-   margin: 0;
-   li:nth-child(2) {
-     margin: 0 20px;
-   }
-   img {
-     width: 30px;
-     opacity: 0.7;
-   }
- }
-
- #about {
-   padding: 0 20px;
-   p {
-     color: $light-teal;
-   }
- }
-
- #name {
-   h1 {
-     font-size: 96px;
-     color: $dark-blue;
-     margin: 0px;
-     padding-bottom: 0;
-   }
-   h2 {
-     font-size: 40px;
-     color: $dark-teal;
-     margin-top: -20px;
-     margin-bottom: 5px;
-     padding-top: 0;
-   }
- }
-
- #projects {
-   height: 100%;
-   text-align: center;
-   border-left: solid 1px $light-teal;
-   margin: 5px 0;
-   p {
-     text-align: left;
-     color: $light-blue;
-     margin-left: 20px;
-   }
-   h3 {
-     color: $light-blue;
-     font-size: 30px;
-     margin: 0;
-     line-height: 155px;
-   }
- }
-
- #education {
-   text-align: center;
-   padding: 10px;
-   padding-bottom: 15px;
-   position: relative;
-   p {
-     text-align: left;
-     color: $medium-teal;
-   }
- }
-
- .education-list-item {
-   display: inline-block;
-   width: 30%;
-   color: $medium-teal;
-   .small-title {
-     margin-bottom: 20px;
-     text-align: left;
-   }
-   h4 {
-     width: 100%;
-     font-size: 14px;
-     margin: 0;
-     text-align: left;
-   }
-   &:nth-child(3) {
-     float: right;
-   }
-   &:nth-child(2) {
-     clear: both;
-   }
-   &:nth-child(1) {
-     float: left;
-   }
- }
-
- .education-cover {
-   text-align: left;
-   background-color: white;
-   color: $medium-teal;
-   position: absolute;
-   top: 0;
-   left: 0;
-   font-size: 14px;
-   height: 100%;
-   h2 {
-     margin-top: 28px;
-     margin-bottom: 0;
-   }
-   &:hover {
-     cursor: pointer;
-   }
- }
-
- #skills {
-   position: relative;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   border-right: solid 1px $light-teal;
-   color: $light-blue;
-   margin: 5px 0;
-   .skills-list {
-     margin-left: 0px;
-     -moz-column-count: 3;
-    -moz-column-gap: 50px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 50px;
-     column-count: 3;
-     column-gap: 50px;
-     li {
-       display: list-item;
-     }
-   }
- }
-
- .skills-cover {
-   position: absolute;
-   top: 0;
-   left: 0;
-   height: 100%;
-   width: 100%;
-   background-color: white;
-   color: $light-blue;
-   h2 {
-     font-size: 16px;
-     width: inherit;
-     margin: 0;
-     @include position-center;
-   }
-   &:hover {
-     cursor: pointer;
-   }
- }
-
- #experience {
-   color: $dark-teal;
-   .small-title {
-     margin-left: 20px;
-   }
-   h3 {
-     text-align: center;
-     width: 100%;
-     font-size: 30px;
-     margin: 0;
-     line-height: 164px;
-     color: $dark-teal;
-   }
- }
