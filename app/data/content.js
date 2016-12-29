@@ -73,5 +73,28 @@ export default {
       links: ['https://github.com/JessicaSung/512-Bingo', 'https://bingo-512.herokuapp.com/'],
       description: "512-Bingo is an interactive game designed to help tourists and locals alike connect with the unique features of Austin. Users choose a game board based on themes such as coffee shops or swimming holes and mark items as they are discovered. Created with Jessica Sung, Erin Gianette, and Blake Roddy."
     }
+  ],
+  experience: [
+    {
+      company: 'RISD Admissions Office',
+      location: 'Providence, RI',
+      title: 'Office Assistant',
+      date: 'May 2012 - May 2015',
+      description: 'In addition to general office work, I designed a new guest card to integrate with an online registration tool. The printed card allowed visitors to double check and correct information while providing additional insight into life at RISD.'
+    },
+    {
+      company: 'Hydro Inc.',
+      location: 'Chicago, IL',
+      title: 'Newsletter Editor',
+      date: 'September 2011 - June 2012',
+      description: 'As newsletter editor, I designed and wrote technical and internal newsletters for an industrial pump repair company. Responsibilities included gathering content from various departments, writing and editing, layout, design, and managing inhouse mailing and printing.'
+    },
+    {
+      company: 'One Strange Bird',
+      location: 'Chicago, IL',
+      title: 'Intern',
+      date: 'September 2011 - June 2012',
+      description: 'I interned with this artist-run store during its first year in business and helped to establish an initial design aesthetic through posters, postcards, and brochures. I also set up an Excel-based method for inventory and consignment tracking.'
+    }
   ]
 };
