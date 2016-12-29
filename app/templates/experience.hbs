@@ -11,8 +11,12 @@
       <h5>{{experience.location}}, {{experience.date}}</h5>
     </div>
     <div class="col-8">
-      <p>{{experience.description}}</p>
+      <p class="experience-description">{{experience.description}}</p>
     </div>
   </div>
   {{/each}}
+  <div class="row">
+    {{#connect-links}}
+    {{/connect-links}}
+  </div>
 </div>
