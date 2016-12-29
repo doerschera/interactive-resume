@@ -43,15 +43,18 @@
 .word-info {
   color: $dark-blue;
   .word, .definition {
-    text-transform: capitalize;
     margin: 0;
   }
   .word {
+    text-transform: capitalize;
     font-size: 50px;
     margin-top: 16px;
   }
   .part {
     margin-top: 0;
+  }
+  .definition {
+    padding: 0 5px;
   }
 }
 
@@ -84,8 +87,4 @@
 .color-values li {
   display: list-item;
   list-style: none;
-}
-
-.about-connect {
-
 }

@@ -6,7 +6,9 @@ moduleFor('controller:about', 'Unit | Controller | about', {
 });
 
 // Replace this with your real tests.
-test('it exists', function(assert) {
+test('part and definition default values set to false', function(assert) {
   let controller = this.subject();
-  assert.ok(controller);
+
+  assert.equal(controller.get('part'), false);
+  assert.equal(controller.get('definition'), false);
 });
