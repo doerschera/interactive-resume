@@ -1,10 +1,12 @@
 
 <div class="container main">
   <div class="row">
+
     <div class="col-4" id="connect">
       {{#connect-links}}
       {{/connect-links}}
     </div>
+
     <div class="col-6" id="about">
       {{#link-to "about"}}
       <p class="small-title">About</p>
@@ -14,6 +16,7 @@
       {{/link-to}}
     </div>
   </div>
+
   <div class="row" id="row1">
     <div class="col-6" id="name">
       <h1>I'm Aly</h1>
@@ -26,6 +29,7 @@
       {{/link-to}}
     </div>
   </div>
+
   <div class="col-12" id="education">
     {{#each model.education as |entry|}}
     <div class="education-list-item">
@@ -43,6 +47,7 @@
       <h2>My background in art and design gave me a strong visual sensibility and a love of problem solving. When I started programming I found the perfect medium. </h2>
     </div>
   </div>
+
   <div class="row">
     <div class="col-6" id="skills">
       <p class="col-12 small-title">Skills</p>
@@ -63,8 +68,6 @@
       <h3>Here's what I've done</h3>
       {{/link-to}}
     </div>
+
   </div>
-
 </div>
-
-<!-- {{outlet}} -->

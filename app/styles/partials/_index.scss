@@ -17,6 +17,23 @@
   display: block;
 }
 
+#about,
+#projects,
+#experience,{
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.education-cover,
+.skills-cover {
+  &:hover {
+    h2, p {
+      opacity: 0.6
+    }
+  }
+}
+
  #about {
    padding: 0 20px;
    p {

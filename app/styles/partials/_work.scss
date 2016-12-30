@@ -3,7 +3,8 @@
   padding-bottom: 5px;
 }
 
-.project-image, .project-info {
+.project-image,
+.project-info {
   margin: 5px 0;
 }
 
@@ -35,7 +36,8 @@
   display: none;
 }
 
-.project-image, .project-info {
+.project-image,
+.project-info {
   padding: 10px 0;
 }
 
@@ -77,10 +79,15 @@
   border-right: solid 1px $medium-teal;
 }
 
-.project-tracking, #next-project, #previous-project {
+.project-tracking,
+#next-project,
+#previous-project {
   margin: 5px 0;
 }
 
-#next-project:hover, #previous-project:hover {
-  cursor: pointer;
+#next-project,
+#previous-project {
+  &:hover {
+    cursor: pointer;
+  }
 }

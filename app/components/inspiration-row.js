@@ -1,8 +1,6 @@
 import Ember from 'ember';
 import ENV from 'resume/config/environment';
 
-const $ = Ember.$;
-
 export default Ember.Component.extend({
 
   didInsertElement() {
@@ -23,7 +21,7 @@ export default Ember.Component.extend({
     }
 
     // retrieve color data using random color
-    $.ajax({
+    Ember.$.ajax({
       url: 'http://www.thecolorapi.com/id?format=json&hex='+colorQuery,
       method: 'GET'
     }).done(function(response) {
@@ -37,7 +35,7 @@ export default Ember.Component.extend({
     }.bind(this));
 
     // retrieve random word
-    $.ajax({
+    Ember.$.ajax({
       url: 'https://wordsapiv1.p.mashape.com/words/?random=true&hasDetails',
       method: 'GET',
       beforeSend: function(xhr){xhr.setRequestHeader('X-Mashape-Key', ENV.WORD_KEY)},
