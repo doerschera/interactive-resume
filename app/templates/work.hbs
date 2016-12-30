@@ -22,8 +22,17 @@
       }}
     {{/each}}
   </div>
-  {{#project-view}}
-  {{/project-view}}
+  <div class="row project-nav">
+    <div class="col-4" id="previous-project">
+      <p class="small-title">prev</p>
+    </div>
+    <div class="col-4 project-tracking">
+      <p class="small-title">1/6</p>
+    </div>
+    <div class="col-4" id="next-project">
+      <p class="small-title" {{action "nextProject"}}>next</p>
+    </div>
+  </div>
   {{#connect-links}}
   {{/connect-links}}
 </div>

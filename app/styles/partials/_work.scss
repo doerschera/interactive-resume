@@ -24,8 +24,6 @@
 }
 
 #projects-viewer {
-  height: 400px;
-  overflow: auto;
   border-bottom: solid 1px $medium-teal;
   color: $dark-teal;
   a {
@@ -64,6 +62,25 @@
   }
 }
 
-.show-project {
-  display: block;
+
+.project-nav {
+  text-align: center;
+  color: $dark-teal;
+  border-bottom: solid 1px $medium-teal;
+  .small-title {
+    margin: 5px 0;
+  }
+}
+
+.project-tracking {
+  border-left: solid 1px $medium-teal;
+  border-right: solid 1px $medium-teal;
+}
+
+.project-tracking, #next-project, #previous-project {
+  margin: 5px 0;
+}
+
+#next-project:hover, #previous-project:hover {
+  cursor: pointer;
 }
