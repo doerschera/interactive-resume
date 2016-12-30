@@ -15,34 +15,8 @@
       </p>
     </div>
   </div>
-  <div class="inspiration">
-    <div class="row">
-      <div class="word-info col-6">
-        <p class="small-title">Word</p>
-        <h1 class="word">{{word}}</h1>
-        {{#if part}}
-        <p class="part">{{part}}</p>
-        {{/if}}
-        {{#if defintion}}
-        <h5 class="definition">{{definition}}</h5>
-        {{/if}}
-      </div>
-      <div class="color-info col-6">
-        <p class="small-title">Color</p>
-        <div class="row">
-          <div class="color"></div>
-          <div class="color-values-wrapper">
-            <p class="color-name">{{name}}</p>
-            <ul class="color-values">
-              <li>{{hex}}</li>
-              <li>{{rgb}}</li>
-              <li>{{cmyk}}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {{#inspiration-row}}
+  {{/inspiration-row}}
   <div class="about-connect">
     {{#connect-links}}
     {{/connect-links}}

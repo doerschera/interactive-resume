@@ -43,10 +43,10 @@
 .word-info {
   color: $dark-blue;
   .word, .definition {
-    text-transform: capitalize;
     margin: 0;
   }
   .word {
+    text-transform: capitalize;
     font-size: 50px;
     margin-top: 16px;
   }
