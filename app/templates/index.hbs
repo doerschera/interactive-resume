@@ -27,7 +27,7 @@
     </div>
   </div>
   <div class="col-12" id="education">
-    {{#each education as |entry|}}
+    {{#each model.education as |entry|}}
     <div class="education-list-item">
       <p class="small-title">{{entry.title}}</p>
       <h4>{{entry.school}}</h4>
@@ -47,7 +47,7 @@
     <div class="col-6" id="skills">
       <p class="col-12 small-title">Skills</p>
       <ul class="skills-list">
-        {{#each skills as |skill|}}
+        {{#each model.skills as |skill|}}
           <li>{{skill.name}}</li>
         {{/each}}
       </ul>

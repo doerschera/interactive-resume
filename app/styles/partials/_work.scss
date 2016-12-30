@@ -23,20 +23,16 @@
   font-size: 15px;
 }
 
-#projects-view {
-  height: 400px;
-  overflow: auto;
+#projects-viewer {
   border-bottom: solid 1px $medium-teal;
   color: $dark-teal;
   a {
     color: $dark-teal;
   }
-  .row {
-    border-bottom: solid 1px #e6e6e6;
-    &:last-child {
-      border-bottom: none;
-    }
-  }
+}
+
+.project {
+  display: none;
 }
 
 .project-image, .project-info {
@@ -64,4 +60,27 @@
   p {
     font-size: 14px;
   }
+}
+
+
+.project-nav {
+  text-align: center;
+  color: $dark-teal;
+  border-bottom: solid 1px $medium-teal;
+  .small-title {
+    margin: 5px 0;
+  }
+}
+
+.project-tracking {
+  border-left: solid 1px $medium-teal;
+  border-right: solid 1px $medium-teal;
+}
+
+.project-tracking, #next-project, #previous-project {
+  margin: 5px 0;
+}
+
+#next-project:hover, #previous-project:hover {
+  cursor: pointer;
 }
