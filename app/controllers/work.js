@@ -4,16 +4,33 @@ import content from '../data/content';
 const $ = Ember.$;
 
 export default Ember.Controller.extend({
-  currentProject: 0,
+  currentProject: 1,
 
   actions: {
     nextProject() {
-      let activeProject = '#project'+this.currentProject;
-      this.currentProject ++
-      let nextProject = '#project'+this.currentProject;
+      let counter = this.get('currentProject');
+      let activeProject = $('.activeProj');
+      let nextProject = $(activeProject).next('.ember-view');
 
-      $(activeProject).hide();
-      $(nextProject).css('display', 'flex');
+      if(this.currentProject===6) {
+        let  nextProject = $('#project0');
+        $('.activeProj .project').hide();
+        $('.activeProj').removeClass('activeProj');
+        $(nextProject).css('display', 'flex');
+        $(nextProject).parent().addClass('activeProj');
+        this.set('currentProject', 1);
+        return false;
+      }
+
+      $('.activeProj .project').hide();
+      $('.activeProj').removeClass('activeProj');
+      $(nextProject).children('.project').css('display', 'flex');
+      $(nextProject).addClass('activeProj');
+
+      this.set('currentProject', counter+=1);
+      console.log(this.currentProject);
+
+
     }
   },
 });
