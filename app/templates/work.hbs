@@ -13,25 +13,25 @@
       <h1>Form + Function</h1>
     </div>
   </div>
-  <div id="projects-view">
+  <div id="projects-viewer">
     <p class="small-title">Work</p>
-    {{#each projects as |project|}}
-    <div class="row">
-      <div class="project-image">
-        <a href="{{project.links.[1]}}" target="_blank">
-          <img src="{{project.image}}" alt="{{project.title}}">
-        </a>
-      </div>
-      <div class="project-info">
-        <a href="{{project.links.[1]}}" target="_blank">
-          <h1>{{project.title}}</h1>
-        </a>
-        <h5>{{{project.skills}}}</h5>
-        <p>{{project.description}}</p>
-        <a href="{{project.links.[0]}}" target="_blank"><h5>View code</h5></a>
-      </div>
-    </div>
+    {{#each model as |project index|}}
+      {{project-view title=project.title skills=project.skills description=project.description link1=project.links.[0] link2=project.links.[1]
+      image=project.image
+      index = index
+      }}
     {{/each}}
+  </div>
+  <div class="row project-nav">
+    <div class="col-4" id="previous-project">
+      <p class="small-title" {{action "prevProject"}}>prev</p>
+    </div>
+    <div class="col-4 project-tracking">
+      <p class="small-title">{{currentProject}}/6</p>
+    </div>
+    <div class="col-4" id="next-project">
+      <p class="small-title" {{action "nextProject"}}>next</p>
+    </div>
   </div>
   {{#connect-links}}
   {{/connect-links}}
