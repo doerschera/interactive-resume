@@ -17,6 +17,13 @@
   display: block;
 }
 
+#about, #projects, #education, #experience, #skills {
+  &:hover {
+    // background-color: #fcfcfc;
+    opacity: 0.6;
+  }
+}
+
  #about {
    padding: 0 20px;
    p {
