@@ -4,7 +4,8 @@
   margin-bottom: 5px;
 }
 
-.greeting, .word-info {
+.greeting,
+.word-info {
   border-right: solid 1px $light-teal;
 }
 
@@ -35,7 +36,8 @@
   border-bottom: solid 1px $light-teal;
 }
 
-.word-info, .color-info {
+.word-info,
+.color-info {
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
@@ -84,8 +86,4 @@
 .color-values li {
   display: list-item;
   list-style: none;
-}
-
-.about-connect {
-
 }

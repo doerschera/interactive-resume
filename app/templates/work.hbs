@@ -13,6 +13,7 @@
       <h1>Form + Function</h1>
     </div>
   </div>
+
   <div id="projects-viewer">
     <p class="small-title">Work</p>
     {{#each model.projects as |project index|}}
@@ -22,6 +23,7 @@
       }}
     {{/each}}
   </div>
+
   <div class="row project-nav">
     <div class="col-4" id="previous-project">
       <p class="small-title" {{action "prevProject"}}>prev</p>
@@ -33,6 +35,7 @@
       <p class="small-title" {{action "nextProject"}}>next</p>
     </div>
   </div>
+
   {{#connect-links}}
   {{/connect-links}}
 </div>

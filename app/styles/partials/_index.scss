@@ -17,10 +17,20 @@
   display: block;
 }
 
-#about, #projects, #education, #experience, #skills {
+#about,
+#projects,
+#experience,{
   &:hover {
-    // background-color: #fcfcfc;
     opacity: 0.6;
+  }
+}
+
+.education-cover,
+.skills-cover {
+  &:hover {
+    h2, p {
+      opacity: 0.6
+    }
   }
 }
 
