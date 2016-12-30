@@ -15,7 +15,7 @@
   </div>
   <div id="projects-viewer">
     <p class="small-title">Work</p>
-    {{#each model as |project index|}}
+    {{#each model.projects as |project index|}}
       {{project-view title=project.title skills=project.skills description=project.description link1=project.links.[0] link2=project.links.[1]
       image=project.image
       index = index
@@ -27,7 +27,7 @@
       <p class="small-title" {{action "prevProject"}}>prev</p>
     </div>
     <div class="col-4 project-tracking">
-      <p class="small-title">{{currentProject}}/6</p>
+      <p class="small-title">{{model.currentProject}}/6</p>
     </div>
     <div class="col-4" id="next-project">
       <p class="small-title" {{action "nextProject"}}>next</p>

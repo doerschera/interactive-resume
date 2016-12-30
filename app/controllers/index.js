@@ -1,11 +1,8 @@
 import Ember from 'ember';
-import data from '../data/content';
 
-let $ = Ember.$;
+const $ = Ember.$;
 
 export default Ember.Controller.extend({
-  skills: data.skills,
-  education: data.education,
   actions: {
     slideSkills() {
       $('.skills-cover h2').css({color: 'white'});
