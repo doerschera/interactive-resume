@@ -30,7 +30,30 @@ export default Ember.Controller.extend({
       this.set('currentProject', counter+=1);
       console.log(this.currentProject);
 
+    },
 
+    prevProject() {
+      let counter = this.get('currentProject');
+      let activeProject = $('.activeProj');
+      let nextProject = $(activeProject).prev('.ember-view');
+
+      if(this.currentProject===1) {
+        let  nextProject = $('#project5');
+        $('.activeProj .project').hide();
+        $('.activeProj').removeClass('activeProj');
+        $(nextProject).css('display', 'flex');
+        $(nextProject).parent().addClass('activeProj');
+        this.set('currentProject', 6);
+        return false;
+      }
+
+      $('.activeProj .project').hide();
+      $('.activeProj').removeClass('activeProj');
+      $(nextProject).children('.project').css('display', 'flex');
+      $(nextProject).addClass('activeProj');
+
+      this.set('currentProject', counter-=1);
+      console.log(this.currentProject);
     }
   },
 });
